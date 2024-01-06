@@ -1,0 +1,31 @@
+sudo apt update
+git --version
+git clone
+cd folder
+docker -v
+sudo apt install docker
+ps
+sudo systemctl --type=service --state=running
+sudo docker ps
+sudo docker images
+sudo docker build -t name .
+sudo docker run -d -p 8000:8000 imagename
+sudo docker service stop
+sudo docker rmi imageid -f
+
+
+
+FROM node:12
+WORKDIR /app
+COPY package.json/app
+RUN npm install
+COPY ./app
+CMD node server.js
+EXPOSE 8000
+
+
+launch aws
+the ec2
+launch instance
+security inbound rules
+launch connect
